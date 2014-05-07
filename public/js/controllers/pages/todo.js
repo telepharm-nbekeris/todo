@@ -161,6 +161,8 @@ define([
     restoreItem: function (data) {
       data.active(true); // set item to active
       data.archive(false); // remove archive setting
+      todo.countActive();
+      todo.countComplete();
     }
     
   };
